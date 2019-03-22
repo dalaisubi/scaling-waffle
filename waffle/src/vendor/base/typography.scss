@@ -1,0 +1,119 @@
+@import "./color";
+@import url('https://webfonts.fontstand.com/WF-016314-fb5b828289e2aa0382db760f915f7ac0.css');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 900;
+
+$fontsize-extra-tiny: 8;
+$fontsize-tiny: 9;
+$fontsize-micro: 10;
+$fontsize-micro-mobile:11;
+$fontsize-smaller: 12;
+$fontsize-smallest: 13;
+$fontsize-small: 14;
+$font-for-mobile:15;
+$fontsize-base: 16;
+$fontsize-m: 17;
+$fontsize-medium: 18;
+$fontsize-large: 20;
+$fontsize-larger: 22;
+$fontsize-larger-x: 24;
+$fontsize-larger-xl:26;
+$fontsize-larger-xx: 28;
+$fontsize-largest: 30;
+$fontsize-largest-mid:34;
+$fontsize-halfJumbo: 40;
+$fontsize-largeJumbo: 44;
+$fontsize-largemedJumbo: 48;
+$fontsize-jumbo: 64;
+
+$lineHeight-base: 1.5;
+$lineHeight-tight: 1.35;
+$lineHeight-tighter: 1.8;
+$lineHeight-s:20px;
+$lineHeight-p:24px;
+$lineHeight-m:21px;
+$lineHeight-mobile:28px;
+$lineHeight-wide:30px;
+$lineHeight-banner-mobile:34px;
+$lineHeight-banner-tablet:38px;
+$lineHeight-banner:54px;
+
+$input_border:1px;
+$border_radius:3px;
+$font: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; 
+$systemMonospace: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+$Graphik: "Graphik Regular";
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 100%;
+    position: relative;
+    min-height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $Graphik;
+    font-weight: $regular;
+    font-size: em($fontsize-base);
+    color: $black;
+    line-height: $lineHeight-base;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    font-weight: $regular;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0
+}
+
+input {
+    font-weight: $regular;
+    letter-spacing: 1px;
+    border: 0;
+    outline: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}

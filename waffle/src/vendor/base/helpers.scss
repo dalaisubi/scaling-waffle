@@ -1,0 +1,20 @@
+@mixin button {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #0064fa;
+  color: #fff;
+  transition: background-color 500ms, width 1s;
+  height: 50px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 50px;
+  letter-spacing: normal;
+  &:hover {
+    background-color: #004ec3
+  }
+}

@@ -1,0 +1,12 @@
+@import "./vendor/base/grids";
+
+.postcard {
+	&__wrapper {
+		@include container();
+	}
+	&__container {
+		width: 31%;
+		float: left;
+		margin: 1%;
+	}
+} 

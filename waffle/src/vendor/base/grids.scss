@@ -1,0 +1,46 @@
+@import "../susy/susy";
+@import "../breakpoint/breakpoint";
+
+$susy: (flow: ltr,
+        math: fluid,
+        output: float,
+        container: 1200px,
+        container-position: center,
+        columns: 12,
+        gutter-position: outside,
+        column-width: false,
+        global-box-sizing: content-box,
+        last-flow: to,
+        debug: (image: hide,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+        ),
+        use-custom: (background-image: true,
+                background-options: false,
+                box-sizing: true,
+                clearfix: false,
+                rem: true,
+        ));
+
+@include layout($susy float outside);
+@include border-box-sizing;
+
+$phone: max-width 600px; //only for mob
+$phone-y: min-width 640px;
+$tablet: min-width 768px;
+$pc: min-width 991px;
+$ipadpro: max-width 993px,
+max-width 1024px;
+
+.pc {
+  @include breakpoint(max-width 990px) {
+    display: none;
+  }
+}
+
+.not-pc {
+  @include breakpoint(min-width 991px) {
+    display: none;
+  }
+}
