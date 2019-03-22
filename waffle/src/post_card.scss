@@ -5,8 +5,14 @@
 		@include container();
 	}
 	&__container {
-		width: 31%;
+		width: 100%;
 		float: left;
 		margin: 1%;
+		@include breakpoint($tablet) {
+			width: 48%;
+		}
+		@include breakpoint($pc) {
+			width: 31%;
+		}
 	}
 } 

@@ -4,7 +4,6 @@ import './card.scss';
 class Card extends Component {
     
 	render(){
-		console.log(this.props.post)
 		return (
 			<div className="card__container">
 				<div className="card__title">{this.props.post.title}</div>

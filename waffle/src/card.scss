@@ -1,4 +1,5 @@
 @import "./vendor/base/typography";
+@import "./vendor/base/grids";
 
 .card {
 	&__container {
@@ -7,16 +8,21 @@
 	    background-color: #1c78ca;
 	    border-radius: 10px;
 	    padding: 15px 20px;
-	    /*word-break: break-all;*/
 	    color: #fff;
 	    font-family: $Graphik;
-	    height: 205px;
+	    
+	    @include breakpoint($tablet) {
+			height: 205px;
+		}
+		@include breakpoint($pc) {
+			height: 205px;
+		}
 	}
 
 	&__title {
 		line-height: normal;
 		font-size: 20px;
-		font-weight: 500;
+		font-weight: 800;
 	}
 	&__body {
 		font-size: 16px;

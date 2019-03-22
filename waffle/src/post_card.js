@@ -33,7 +33,6 @@ class PostCard extends Component {
   	}
 
 	render(){
-		console.log(this.state.items.length)
 		return (
 			<div className="postcard__wrapper">
 			    {this.state.items.length > 0 ?
