@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Card from './card';
-import "./post_card.scss"
+import "./style/post_card.scss"
 
 class PostCard extends Component {
 

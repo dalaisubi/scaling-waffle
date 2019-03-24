@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.scss';
+import './style/App.scss';
 
-
+import PostCard from './post_card';
 
 class App extends Component {
   render() {
@@ -23,6 +23,7 @@ class App extends Component {
           </a>
         </header>*/}
 
+        <PostCard />
 
       </div>
     );
