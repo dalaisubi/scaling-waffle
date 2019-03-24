@@ -12,7 +12,9 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    overlfow			  : 'scroll',
+    height                : '90vh'
   }
 };
 
@@ -62,7 +64,7 @@ class Card extends Component {
 					        >
 					          <h2 ref={subtitle => this.subtitle = subtitle}></h2>
 					          {/*<button onClick={this.closeModal}>close</button>*/}
-					          <Details post={this.props.post} />
+					          <Details post={this.props.post} close_btn={this.closeModal} />
 					          
 					        </Modal>
 					</div>

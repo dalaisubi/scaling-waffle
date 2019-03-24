@@ -1,0 +1,17 @@
+
+.comment {
+	&__container {
+		font-size: 14px;
+		background-color: #f0f0f0;
+		padding: 7px 10px 7px 20px;
+		border-radius: 20px;
+		margin: 5px 0;
+	}
+	&__name {
+		font-weight: 600;
+		display: inline;	}
+	&__body {
+		display: inline;
+	}
+
+}
